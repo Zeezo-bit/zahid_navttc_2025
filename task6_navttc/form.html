@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Form</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        header {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .buttons button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>REPORT FORM</h2>
+        <header>INFORMATION TABLE</header>
+        <form>
+            <table>
+                <tr>
+                    <td><label>Name</label></td>
+                    <td><input type="text" placeholder="Full Name" required></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" placeholder="example@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" placeholder="Enter your Password" required></td>
+                </tr>
+                <tr>
+                    <td><label>Address</label></td>
+                    <td><input type="text" placeholder="Address" required></td>
+                </tr>
+                <tr>
+                    <td><label>Country</label></td>
+                    <td>
+                        <select required>
+                            <option>Select your Country</option>
+                            <option selected>Pakistan</option>
+                            <option>Iran</option>
+                            <option>Iraq</option>
+                            <option>China</option>
+                            <option>India</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="Gender">Male
+                        <input type="radio" name="Gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Habits</label></td>
+                    <td>
+                        <input type="checkbox"> Reading Daily <br>
+                        <input type="checkbox"> Waking Up Early <br>
+                        <input type="checkbox"> Exercise Regularly <br>
+                        <input type="checkbox"> Saving Money <br>
+                        <input type="checkbox"> Time Management
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Your Website</label></td>
+                    <td><input type="url" placeholder="https://..."></td>
+                </tr>
+                <tr>
+                    <td><label>Other Information About You</label></td>
+                    <td><textarea placeholder="Type your text..."></textarea></td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <button class="send" type="submit">Send In My Report</button>
+                <button class="erase" type="reset">Erase Report Form</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
