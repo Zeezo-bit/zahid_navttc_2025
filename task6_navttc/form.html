@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+thead{
+    
+    text-align: center;
+}
+td,th{text-align: center;
+    border: 1px solid black;
+    text-align: left;
+    padding:15px ;
+width:40px ;
+margin:0px ;
+
+}
+h1{
+    text-align: center;
+    background-color: rgb(34, 90, 78);
+    color: white;
+    border:2px solid black  ;width: 590px;
+    margin: auto;
+    padding: 5px;
+
+    
+    
+}
+h2{
+    text-align: center;
+    border: 2px;
+}
+table{
+    margin: auto;
+    padding: 0%;
+    width: 600px;
+}
+tbody{
+    
+}
+section{
+    margin: auto;
+}
+body{
+    padding: top 50px; 
+    padding: bottom 50px;
+    text-align: center;
+
+}
+
+    </style>
+</head>
+<body>
+
+    <h2> Report Form </h2>
+
+
+    <h1>INFORMATION TABLE</h1>
+   
+    <table>
+        <form>
+
+   <tbody>
+    <tr>
+        <td><label for="Name">Name</label></td>
+        
+        <td><input type="text" required><br>
+        <label> YOU FULL NAME</label></td>
+    </tr>
+    <tr>
+       <td> <label for="Email">EMAIL</label></td>
+       <td> <input type="email" required><br>
+       <label> ENTER AN INTERNET CONTACT ADDRESS </label></td>
+    </tr>
+
+<tr>
+      <td> <label for="password">PASSWORD</label></td> 
+       <td> <input type="password" required><br>
+      <label>ENTER A CODE TO IDENTIFY YOU</label></td>
+    </tr>
+<tr>
+       <td> <label for="Address">ADDRESS</label></td>
+       <td> <input type="text" required><br>
+        COMPLETE ADDRESS
+    </td>
+        
+    </tr>
+    
+
+        <tr>
+           <td> <label for="COUNTRY">COUNTRY</label></td>
+   <td> <select>
+        <option value="pak" selected>Pakistan</option>
+        <option value="ind">INDIA</option>
+        <option value="ir"> Iran</option>
+        <option value="tur"> Turkey</option>
+ </select></td>
+</tr>
+ 
+ <tr>
+ <td><label for="gender">GENDER</label></td>
+ <td><input type="radio" id="male" name="gender" value="male">
+ <label for="Male">Male </label>
+ <input type="radio" id="female" name="gender" value="female">
+ <label for="female">female </label></td>
+</tr>
+ 
+ <tr>
+<td> <label for="hobbies">HOBIES</label></td>
+<td> <input type="checkbox" value="Reading" name="reading" id="r"><label for="r">READING</label><br>
+  <input type="checkbox" value="Listening Music" name="Listening Music" id="Lm"><label for="Lm">LISTENING MUSIC</label>
+  <br>
+
+<input type="checkbox" value="gardening" name="gardening" id="gr"><label for="gr">GARDENING</label>
+<br>
+<input type="checkbox" value="swiming" name="swiming" id="sw"><label for="sw">SWIMING</label>
+<br>
+<input type="checkbox" value="athletics" name="athletics" id="ath"><label for="ath">ATHLETICS</label></td>
+</tr>
+<tr>
+    <td>
+    <label for="web">YOUR WEBSITE</label></td>
+    <td><input type="text" placeholder="https://"><br>
+    PROVIDE YOUR WEBSITE URL IF EXIST (NOT NECESSARY)</td>
+</tr>
+<tr>
+    <td>
+<label for="about">OTHER INFORMATION ABOUT YOU</label></td>
+ <td><textarea name="massage" id="massage" rows="7" cols="30"></textarea><br>
+    WRITE OTHER INFORMATION THAT IS NOT PRESENT HERE
+    
+ </td>
+</tr>
+<tr>
+<td class="button">
+<input class="button" type="submit" value="send In My Report"></td>
+<td class="button">
+    <input class="btn" type="submit" value="Erase Report Form">
+</tr>
+
+</tbody>
+</form>
+</table>
+
+</body>
+</html>
