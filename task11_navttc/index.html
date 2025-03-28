@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: gray;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            
+        }
+        .logo{
+            align-items: center;
+            display: flex;
+            margin: 0 10px;
+        }
+        img{
+            border-radius: 50% ;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+           
+        }
+            .list{
+            margin: 0 5px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #112A46;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .side-nav{
+            width: 150px;
+            height: 50vh;
+            position: fixed;
+            background-color: gray;
+            padding-top: 20px;
+            border-radius: 10px;
+            list-style-type: none;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            margin-top: 10px;
+        }
+        .side-items{
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            font-size: 15pt;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 10px;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">
+        <img src="https://picsum.photos/100" width="50" alt="">NAVTTC
+    </div>
+    <ul class="menu">
+        <a href="#"><li class="list">HOME</li></a>
+        <a href="#"><li class="list">ABOUT</li></a>
+        <a href="#"><li class="list">FEEDBACK</li></a>
+
+    </ul>
+    </nav>
+    
+    <div class="side-nav">
+        <a href="#" class="side-items"><li>Dashboard</li></a>
+        <a href="#" class="side-items"><li>Profile</li></a>
+        <a href="#" class="side-items"><li>Settings</li></a>
+        <a href="#" class="side-items"><li>Logout</li></a>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to My Page</h1>
+        <p style="font-family: cursive;"> No pen, no paper...but, you still draw my attention.</p>
+        <p>Jo pani se nahaiga wo libas badlega jo pasine se nahaiga wo itehas badlega</p>
+        <p>Pathar pr pathar mare to chingari nikalti farzeen bhai ko mare to puri gang nikalti</p>
+        
+    </div>   
+
+
+</body>
+</html>
