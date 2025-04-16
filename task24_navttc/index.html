@@ -6,58 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <h1>Calculator</h1>
-    <label for="">Enter Your 1st Number
-        <input type="number" id="num2">
-    </label>
-    <br>
-    <br>
-    <label for="">Enter Your 2nd Number
-        <input type="number" id="num1">
-    </label>
-    <button id="plus">+</button>
-    <button id="minus">-</button>
+    <button id="show"> Show </button>
+    <button id="hide"> Hide </button>
 
-
-    <p>Jawab ke intezar me ho</p>
-
+    <p id="para">...</p>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
 
-        let result = $('p')
-        let plus = $('#plus')
-        let minus = $('#minus') 
-        let multiply = $('#multiply') 
+        $('#show').click(function(){
+        $('#para').text("The mission explains what you do, why you do it, and how you do it. It's your purpose and plan for reaching your vision.")
+        })
+        $('#hide').click(function(){
+        $('#para').text("The vision is the big picture or long-term goal. It describes what you want to achieve in the future through your web development work.")   
+        })
+
+    </script>
 
 
-        plus.click(  function( e ){
-  
-   
-  let num1  = Number( $('#num1').val() )
-  let num2  = Number( $('#num2').val() )
-  result.text( num1 + num2 )
-  
-
-  })
-
-  minus.click(  function( e ){
-  
-   
-  let num1  = Number( $('#num1').val() )
-  let num2  = Number( $('#num2').val() )
-  result.text( num1 - num2 )
-  
-
-  })
-
-  multiply.click(  function( e ){
-  
-   
-  let num1  = Number( $('#num1').val() )
-  let num2  = Number( $('#num2').val() )
-  result.text( num1 * num2 )
-    
-
-  })
+</body>
+</html
