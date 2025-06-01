@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>onMouseOver Event Example</title>
+  <style>
+    #myImage {
+      position: relative;
+      transition: all 0.3s ease; /* Smooth movement */
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Hover over the image to move it</h3>
+  <img id="myImage" src="pexels-byrahul-695644.jpg"
+       alt="Sample Image"  width="500" height="500"
+       onmouseover="moveImage()"
+       onmouseout="resetImage()">
+
+  <script>
+    function moveImage() {
+      document.getElementById("myImage").style.left = "100px";
+      document.getElementById("myImage").style.top = "20px";
+    }
+
+    function resetImage() {
+      document.getElementById("myImage").style.left = "0px";
+      document.getElementById("myImage").style.top = "0px";
+    }
+  </script>
+
+</body>
+</html>
